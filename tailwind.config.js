@@ -7,8 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        cViolet: '#651CFF'
+        cViolet: '#7D4FDF',
+        cBlack10: '#5A5A5A'
       },
+      fontFamily: {
+        inter: ["Inter", "system-ui"]
+      }
     },
   },
   plugins: [],
