@@ -20,3 +20,8 @@
 .active {
   @apply text-cViolet
 }
+
+/* CARDS */
+.theme-card {
+  @apply col-span-2 h-[220px] rounded-[10px] px-5 py-[25px] md:col-span-1 bg-[url('./assets/bg-theme-1.png')] bg-cover text-white
+}
