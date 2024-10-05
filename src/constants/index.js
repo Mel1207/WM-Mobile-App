@@ -36,7 +36,8 @@ export const transactions = [
     category: "transfer",
     type: "expense",
     status: "pending",
-    date: "10/06/2024"
+    date: "10/06/2024",
+    amount: 10000
   },
   {
     id: 2,
@@ -44,7 +45,8 @@ export const transactions = [
     category: "delivery",
     type: "expense",
     status: "complete",
-    date: "10/06/2024"
+    date: "10/06/2024",
+    amount: 250
   },
   {
     id: 3,
@@ -52,7 +54,8 @@ export const transactions = [
     category: "groceries",
     type: "expense",
     status: "pending",
-    date: "10/06/2024" 
+    date: "10/06/2024",
+    amount: 3500
   },
   {
     id: 4,
@@ -60,7 +63,8 @@ export const transactions = [
     category: "work",
     type: "income",
     status: "complete",
-    date: "10/06/2024" 
+    date: "10/06/2024",
+    amount: 20500
   },
   {
     id: 5,
@@ -68,7 +72,8 @@ export const transactions = [
     category: "credit",
     type: "expense",
     status: "pending",
-    date: "10/06/2024"
+    date: "10/06/2024",
+    amount: 4420
   },
   {
     id: 6,
@@ -76,7 +81,8 @@ export const transactions = [
     category: "transfer",
     type: "expense",
     status: "pending",
-    date: "10/06/2024" 
+    date: "10/06/2024",
+    amount: 8000
   },
   {
     id: 7,
@@ -84,7 +90,8 @@ export const transactions = [
     category: "work",
     type: "income",
     status: "Pending",
-    date: "10/06/2024"
+    date: "10/06/2024",
+    amount: 12500
   }
 ]
 
