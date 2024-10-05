@@ -34,3 +34,30 @@
 .pending {
   @apply py-1 text-[12px] px-3 bg-[#5A5A5A10] text-cBlack20 rounded-full w-max
 }
+
+/* CUSTOM SCROLL */
+.table-container::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track */
+  border-radius: 10px; /* Rounded edges for the track */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #5A5A5A; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded edges for the handle */
+  border: 3px solid #f1f1f1; /* Space between track and scrollbar handle */
+}
+
+/* Custom Scrollbar for Firefox */
+.table-container {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #5A5A5A #f1f1f1; /* Color of scrollbar handle and track */
+}
+
+/* Optional - custom padding to make the scrollbar stand out */
+.table-container {
+  padding-right: 10px;
+}

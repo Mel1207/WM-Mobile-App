@@ -95,6 +95,65 @@ export const transactions = [
   }
 ]
 
+export const cards = [
+  {
+    id: 1,
+    cardName: "BPO master card",
+    cardNumber: "001234502101",
+    expDate: "11/20/2035",
+    limmit: 45000
+  },
+  {
+    id: 2,
+    cardName: "Union blink gold card",
+    cardNumber: "001237429920",
+    expDate: "11/20/2035",
+    limmit: 60000
+  },
+  {
+    id: 3,
+    cardName: "East wood master card",
+    cardNumber: "001334592118",
+    expDate: "11/20/2035",
+    limmit: 25000
+  },
+  {
+    id: 4,
+    cardName: "Chino blink rewards",
+    cardNumber: "001132532151",
+    expDate: "11/20/2035",
+    limmit: 35000
+  },
+  {
+    id: 4,
+    cardName: "Chino blink rewards",
+    cardNumber: "001132532151",
+    expDate: "11/20/2035",
+    limmit: 35000
+  },
+  {
+    id: 4,
+    cardName: "Chino blink rewards",
+    cardNumber: "001132532151",
+    expDate: "11/20/2035",
+    limmit: 35000
+  },
+  {
+    id: 4,
+    cardName: "Chino blink rewards",
+    cardNumber: "001132532151",
+    expDate: "11/20/2035",
+    limmit: 35000
+  },
+  {
+    id: 4,
+    cardName: "Chino blink rewards",
+    cardNumber: "001132532151",
+    expDate: "11/20/2035",
+    limmit: 35000
+  },
+]
+
 export const tabItems = [
   {
     id: 1,
