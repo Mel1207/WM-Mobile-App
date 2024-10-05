@@ -4,7 +4,7 @@ import ThemeCard from '../components/Cards/ThemeCard'
 import BalanceCard from '../components/Cards/BalanceCard'
 import ExpenseCard from '../components/Cards/ExpenseCard'
 import Filter from '../components/Filter'
-import { useGetTransactions } from '../hooks/useGetTransactions'
+// import { useGetTransactions } from '../hooks/useGetTransactions'
 import iconTransfer from '../assets/icon-transfer.svg'
 import iconDelivery from '../assets/icon-delivery.svg'
 import iconGrocery from '../assets/icon-grocery.svg'
@@ -46,27 +46,33 @@ const PageDashboard = () => {
           <h2 className='text-base font-semibold mb-[5px]'>Transaction History</h2>
           <Filter />
           <div className='w-full p-[10px] border rounded-[10px]'>
-            <div className='bg-cWhite10 py-3 px-[10px] rounded-[5px] font-semibold text-sm flex justify-between items-center'>
+            <div className='bg-cWhite10 py-3 px-[10px] rounded-[5px] font-semibold text-sm flex justify-between items-center md:grid md:grid-cols-[100px,180px,100px,100px,1fr] md:gap-[10px]'>
               <p>Transaction</p>
-              <p>Amount</p>
+              <p className='hidden md:block'>Description</p>
+              <p className='hidden md:block'>Date</p>
+              <p className='hidden md:block'>Status</p>
+              <p className='text-right'>Amount</p>
             </div>
             {transactions.map(item => (
-              <div className='p-[10px] border-b flex justify-between items-center' key={item.id}>
+              <div className='p-[10px] border-b flex justify-between items-center md:grid md:grid-cols-[100px,180px,100px,100px,1fr] gap-[10px]' key={item.id}>
                 <div className='flex gap-[15px]'>
                   {item.category === 'transfer' ? <img src={iconTransfer} alt="icon transfer" /> : null}
                   {item.category === 'delivery' ? <img src={iconDelivery} alt="icon transfer" /> : null}
                   {item.category === 'groceries' ? <img src={iconGrocery} alt="icon transfer" /> : null }
                   {item.category === 'work' ? <img src={iconWork} alt="icon transfer" /> : null }
                   {item.category === 'credit' ? <img src={iconCredit} alt='icon credit'/> : null }
-                  <div> 
-                    <p className='text-sm font-medium text-cBlack10 mb-1'>{item.description}</p>
+                  <div className='md:hidden'> 
+                    <p className='text-sm font-medium text-cBlack10 mb-1 truncate max-w-[160px]'>{item.description}</p>
                     <p className='text-xs text-cBlack20'>{item.date}</p>
                   </div>
                 </div>
-                <p>2500.00</p>
+                <p className='hidden md:block truncate'>{item.description}</p>
+                {/* <p className='hidden md:block '>test 2</p> */}
+                <p className='hidden md:block text-xs text-cBlack20 '>{item.date}</p>
+                <p className={`hidden md:block ${item.status === 'complete' ? 'complete' : 'pending'}`}>{item.status}</p>
+                <p className='text-right'>2500.00</p>
               </div>
             ))}
-           
           </div>
         </div>
         <div className='hidden md:block'>
