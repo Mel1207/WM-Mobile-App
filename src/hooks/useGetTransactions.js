@@ -15,7 +15,8 @@ export const useGetTransactions = () => {
   }, [])
 
   return {
-    transactions, getTransactions
+    transactions,
+    getTransactions
   }
 
   // fetch('http://localhost:8000/jobPost').then(res => res.json()).then(data => setJobPost(data))
