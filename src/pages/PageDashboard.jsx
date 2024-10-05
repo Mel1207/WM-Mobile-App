@@ -17,13 +17,14 @@ const PageDashboard = () => {
     <div className='container'>
       <div className='flex items-center justify-between mt-4 mb-[25px]'>
         <div>
-          <h1 className='text-base font-bold text-cBlack10'>Welcome back Mel 👋</h1>
+          <h1 className='text-base font-bold text-cBlack10 md:text-xl'>Welcome back Mel 👋</h1>
           <p className='text-cBlack20'>How I can help you?</p>
         </div>
 
         <Button btnTitle='New' classList='bg-cViolet h-[45px] w-[50px] rounded-md text-white'/>
       </div>
-      <div className='grid grid-cols-2 gap-5 md:grid-cols-3'>
+      {/* CARD SECTION */}
+      <div className='grid grid-cols-2 gap-5 md:grid-cols-3 mb-[25px] md:mb-9'>
         <div className="theme-card flex justify-between flex-col">
           <div className='flex justify-between items-center'>
             <p className='text-[12px]'>{userWallet.accCreation}</p>
@@ -41,7 +42,7 @@ const PageDashboard = () => {
         <div className='h-[132px] border rounded-[10px] p-[15px] md:h-[220px] flex flex-col justify-between'>
           <img src={iconBalance} alt="Icon balance" className='h-10 w-10 md:w-[50px] md:h-[50px]' />
           <div>
-            <span className='text-[14px] text-cBlack20'>Total expense</span>
+            <span className='text-[14px] text-cBlack20'>Total balance</span>
             <p className='font-bold text-cBlack10 text-[18px] md:text-3xl'>₱25,035.00</p>
           </div>
         </div>
@@ -51,6 +52,15 @@ const PageDashboard = () => {
             <span className='text-[14px] text-cBlack20'>Total expense</span>
             <p className='font-bold text-cBlack10 text-[18px] md:text-3xl'>₱25,035.00</p>
           </div>
+        </div>
+      </div>
+      {/* TRANSACTIONS AND CARD LIST */}
+      <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
+        <div className='col-span-1 md:col-span-2'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quod voluptatibus odio totam placeat a iste enim deserunt eveniet expedita?
+        </div>
+        <div className='hidden md:block'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorem! Amet quaerat quo inventore quibusdam pariatur veniam minima assumenda est!
         </div>
       </div>
     </div>
