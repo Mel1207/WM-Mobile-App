@@ -6,7 +6,7 @@ const MobileNav = () => {
   const location = useLocation()
 
   return (
-    <div className='fixed bottom-0 h-20 border-t w-full flex items-center px-[30px] justify-between'>
+    <div className='fixed bottom-0 h-20 border-t w-full flex items-center px-[30px] justify-between md:hidden'>
       {/* REGULAR LINKS */}
       {mobileLinks.map(item => (
         <NavLink key={item.id} to={item.path} className='flex justify-center items-center flex-col gap-[5px]'>
