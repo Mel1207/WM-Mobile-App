@@ -87,3 +87,18 @@ export const transactions = [
     date: "10/06/2024"
   }
 ]
+
+export const tabItems = [
+  {
+    id: 1,
+    tabTitle: 'All',
+  },
+  {
+    id: 2,
+    tabTitle: 'Pending',
+  },
+  {
+    id: 3,
+    tabTitle: 'Completed',
+  }
+]
