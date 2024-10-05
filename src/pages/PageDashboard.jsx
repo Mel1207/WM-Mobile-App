@@ -43,9 +43,11 @@ const PageDashboard = () => {
       {/* TRANSACTIONS AND CARD LIST */}
       <div className='grid grid-cols-1 gap-5 md:grid-cols-3 pb-[100px]'>
         <div className='col-span-1 md:col-span-2'>
-          <h2 className='text-base font-semibold mb-[5px]'>Transaction History</h2>
-          <Filter />
-          <div className='w-full p-[10px] border rounded-[10px]'>
+          <div className='flex flex-col gap-[5px] md:flex-row md:justify-between md:items-center mb-5'>
+            <h2 className='text-base font-bold'>Transaction History</h2>
+            <Filter />
+          </div>
+          <div className='w-full p-[10px] border rounded-[10px] md:p-5 overflow-hidden'>
             <div className='bg-cWhite10 py-3 px-[10px] rounded-[5px] font-semibold text-sm flex justify-between items-center md:grid md:grid-cols-[100px,180px,100px,100px,1fr] md:gap-[10px]'>
               <p>Transaction</p>
               <p className='hidden md:block'>Description</p>
@@ -67,17 +69,16 @@ const PageDashboard = () => {
                   </div>
                 </div>
                 <p className='hidden md:block truncate'>{item.description}</p>
-                {/* <p className='hidden md:block '>test 2</p> */}
                 <p className='hidden md:block text-xs text-cBlack20 '>{item.date}</p>
-                <p className={`hidden md:block ${item.status === 'complete' ? 'complete' : 'pending'}`}>{item.status}</p>
+                <p className={`hidden md:block capitalize ${item.status === 'complete' ? 'complete' : 'pending'}`}>{item.status}</p>
                 <p className='text-right'>2500.00</p>
               </div>
             ))}
           </div>
         </div>
         <div className='hidden md:block'>
-          <h2 className='text-base text-cBlack10 font-bold'>My Cards</h2>
-          <div className=''>
+          <h2 className='text-base text-cBlack10 font-bold mb-5'>My Cards</h2>
+          <div className='w-full p-[10px] border rounded-[10px] md:p-5'>
             table inside
           </div>
         </div>
