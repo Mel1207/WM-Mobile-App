@@ -4,6 +4,12 @@ import ThemeCard from '../components/Cards/ThemeCard'
 import BalanceCard from '../components/Cards/BalanceCard'
 import ExpenseCard from '../components/Cards/ExpenseCard'
 import Filter from '../components/Filter'
+import { useGetTransactions } from '../hooks/useGetTransactions'
+import iconTransfer from '../assets/icon-transfer.svg'
+import iconDelivery from '../assets/icon-delivery.svg'
+import iconGrocery from '../assets/icon-grocery.svg'
+import iconWork from '../assets/icon-work.svg'
+import iconCredit from '../assets/icon-credit.svg'
 
 const PageDashboard = () => {
   const [userWallet, setUserWallet] = useState({
@@ -12,6 +18,8 @@ const PageDashboard = () => {
     accCreation: '09/10/2024',
     theme: 'theme-1'
   })
+
+  const { transactions, getTransactions } = useGetTransactions()
 
   return (
     <div className='container'>
@@ -41,27 +49,23 @@ const PageDashboard = () => {
               <p>Transaction</p>
               <p>Amount</p>
             </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
-            <div className='p-[10px] border-b'>
-              content here
-            </div>
+            {transactions.map(item => (
+              <div className='p-[10px] border-b flex justify-between items-center' key={item.id}>
+                <div className='flex gap-[15px]'>
+                  {item.category === 'transfer' ? <img src={iconTransfer} alt="icon transfer" /> : null}
+                  {item.category === 'delivery' ? <img src={iconDelivery} alt="icon transfer" /> : null}
+                  {item.category === 'groceries' ? <img src={iconGrocery} alt="icon transfer" /> : null }
+                  {item.category === 'work' ? <img src={iconWork} alt="icon transfer" /> : null }
+                  {item.category === 'credit' ? <img src={iconCredit} alt='icon credit'/> : null }
+                  <div> 
+                    <p className='text-sm font-medium text-cBlack10 mb-1'>{item.description}</p>
+                    <p className='text-xs text-cBlack20'>{item.date}</p>
+                  </div>
+                </div>
+                <p>2500.00</p>
+              </div>
+            ))}
+           
           </div>
         </div>
         <div className='hidden md:block'>

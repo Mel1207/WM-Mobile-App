@@ -3,51 +3,66 @@
     {
       "id": 1,
       "description": "Paid tuition",
-      "category": "transfer-fund",
+      "category": "transfer",
       "type": "expense",
-      "status": "pending" 
+      "status": "pending",
+      "date": "10/06/2024"
     },
     {
       "id": 2,
       "description": "Parcel delivery payment",
       "category": "delivery",
       "type": "expense",
-      "status": "complete" 
+      "status": "complete",
+      "date": "10/06/2024"
     },
     {
       "id": 3,
       "description": "Buy groceries",
       "category": "groceries",
       "type": "expense",
-      "status": "pending" 
+      "status": "pending",
+      "date": "10/06/2024" 
     },
     {
       "id": 4,
       "description": "Payslip payment",
       "category": "work",
       "type": "income",
-      "status": "complete" 
+      "status": "complete",
+      "date": "10/06/2024" 
     },
     {
       "id": 5,
       "description": "Credit card payment",
       "category": "credit",
       "type": "expense",
-      "status": "pending" 
+      "status": "pending",
+      "date": "10/06/2024"
     },
     {
       "id": 6,
       "description": "Buy phone",
-      "category": "transfer-fund",
+      "category": "transfer",
       "type": "expense",
-      "status": "pending" 
+      "status": "pending",
+      "date": "10/06/2024" 
     },
     {
       "id": 7,
       "description": "Part time payment",
       "category": "work",
       "type": "income",
-      "status": "Pending" 
+      "status": "Pending",
+      "date": "10/06/2024"
+    }
+  ], 
+  "cards": [
+    {
+      "id": 1,
+      "cardName": "BPO CC",
+      "cardNumber": "001234502101",
+      "expDate": "11/20/2035"
     }
   ]
 }
