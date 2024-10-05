@@ -6,6 +6,7 @@ import PageTransactions from "./pages/PageTransactions"
 import PageCards from "./pages/PageCards"
 import MobileNav from "./components/Navigations/MobileNav"
 import PageAccount from "./pages/PageAccount"
+import TopNav from "./components/Navigations/TopNav"
 
 function App() {
   const location = useLocation()
@@ -14,6 +15,7 @@ function App() {
     <>
       {location.pathname !== '/' ? <Navbar /> : null }
       {location.pathname !== '/' ? <MobileNav /> : null }
+      {location.pathname !== '/' ? <TopNav /> : null }
 
       <Routes>
         <Route path="/" exact element={<PageLanding />}/>

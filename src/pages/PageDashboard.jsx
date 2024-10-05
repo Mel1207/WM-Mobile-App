@@ -2,7 +2,10 @@ import React from 'react'
 
 const PageDashboard = () => {
   return (
-    <div>PageDashboard</div>
+    <div>
+      test
+
+    </div>
   )
 }
 
