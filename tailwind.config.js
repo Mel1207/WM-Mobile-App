@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         cViolet: '#7D4FDF',
-        cBlack10: '#5A5A5A'
+        cBlack10: '#222222',
+        cBlack20: '#5A5A5A'
       },
       fontFamily: {
         inter: ["Inter", "system-ui"]
