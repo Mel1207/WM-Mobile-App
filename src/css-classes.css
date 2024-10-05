@@ -11,3 +11,12 @@
 .btn-outlined-secondary {
   @apply rounded-md w-full h-[45px] border border-gray-900
 }
+
+/* NAVIGATIONS */
+.top-nav {
+  @apply hidden
+}
+
+.active {
+  @apply text-cViolet
+}
