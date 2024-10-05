@@ -30,7 +30,9 @@ const PageDashboard = () => {
           <h1 className='text-base font-bold text-cBlack10 md:text-xl'>Welcome back Mel 👋</h1>
           <p className='text-cBlack20'>How I can help you?</p>
         </div>
-        <Button btnTitle='New' classList='bg-cViolet h-[45px] w-[50px] rounded-md text-white'/>
+        <Button classList='flex justify-center items-center bg-cViolet md:hidden h-[45px] w-[50px] rounded-md text-white' hasIcon={true}/>
+        <Button btnTitle='New transaction' classList='justify-center items-center gap-[10px]
+         bg-cViolet hidden md:flex h-[45px] px-[15px] rounded-md text-white text-[14px]' hasIcon={true}/>
       </div>
 
       {/* CARD SECTION */}
@@ -71,7 +73,10 @@ const PageDashboard = () => {
                 <p className='hidden md:block truncate'>{item.description}</p>
                 <p className='hidden md:block text-xs text-cBlack20 '>{item.date}</p>
                 <p className={`hidden md:block capitalize ${item.status === 'complete' ? 'complete' : 'pending'}`}>{item.status}</p>
-                <p className='text-right'>2500.00</p>
+                <p className={`text-right font-semibold ${item.type === 'expense' ? 'text-cRed' : 'text-cGreen'}`}>
+                  {item.type === 'expense' ? <span>-</span> : <span>+</span>}
+                  {item.amount}.00
+                </p>
               </div>
             ))}
           </div>
