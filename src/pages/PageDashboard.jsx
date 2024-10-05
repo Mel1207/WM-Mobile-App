@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Button from '../components/Button'
 import iconGear from '../assets/icon-gear.svg'
 import iconChip from '../assets/icon-chip.svg'
+import iconBalance from '../assets/icon-balance.svg'
+import iconExpense from '../assets/icon-expense.svg'
 
 const PageDashboard = () => {
   const [userWallet, setUserWallet] = useState({
@@ -36,8 +38,20 @@ const PageDashboard = () => {
             <h3 className='font-bold text-[14px]'>{userWallet.accName}</h3>
           </div>
         </div>
-        <div className='h-[132px] border rounded-[10px] p-[15px] md:h-[220px]'>2</div>
-        <div className='h-[132px] border rounded-[10px] p-[15px] md:h-[220px]'>3</div>
+        <div className='h-[132px] border rounded-[10px] p-[15px] md:h-[220px] flex flex-col justify-between'>
+          <img src={iconBalance} alt="Icon balance" className='h-10 w-10 md:w-[50px] md:h-[50px]' />
+          <div>
+            <span className='text-[14px] text-cBlack20'>Total expense</span>
+            <p className='font-bold text-cBlack10 text-[18px] md:text-3xl'>₱25,035.00</p>
+          </div>
+        </div>
+        <div className='h-[132px] border rounded-[10px] p-[15px] md:h-[220px] flex flex-col justify-between'>
+          <img src={iconExpense} alt="Icon expense" className='h-10 w-10 md:w-[50px] md:h-[50px]'/>
+          <div>
+            <span className='text-[14px] text-cBlack20'>Total expense</span>
+            <p className='font-bold text-cBlack10 text-[18px] md:text-3xl'>₱25,035.00</p>
+          </div>
+        </div>
       </div>
     </div>
   )
