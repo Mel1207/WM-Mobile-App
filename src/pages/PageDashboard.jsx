@@ -24,15 +24,15 @@ const PageDashboard = () => {
       <div className='grid grid-cols-2 gap-5 md:grid-cols-3'>
         <div className="theme-card flex justify-between flex-col">
           <div className='flex justify-between items-center'>
-            <p>{userWallet.accCreation}</p>
+            <p className='text-[12px]'>{userWallet.accCreation}</p>
             <img src={iconGear} alt="icon gear" />
           </div>
           <div>
-            <img src={iconChip} alt="icon chip" className='h-[25px] mr-auto'/>
-            <h2 className='text-[25px] font-bold'>{userWallet.accNumber}</h2>
+            <img src={iconChip} alt="icon chip" className='h-[25px] mr-auto mb-[5px]'/>
+            <h2 className='text-[23px] font-bold'>{userWallet.accNumber}</h2>
           </div>
           <div>
-            <p className='text-[10px] mb-[5px]'>Account name</p>
+            <p className='text-[10px] mb-[3px]'>Account name</p>
             <h3 className='font-bold text-[14px]'>{userWallet.accName}</h3>
           </div>
         </div>
