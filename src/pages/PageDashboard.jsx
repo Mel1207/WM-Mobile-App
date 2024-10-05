@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Button from '../components/Button'
-import iconExpense from '../assets/icon-expense.svg'
 import ThemeCard from '../components/Cards/ThemeCard'
 import BalanceCard from '../components/Cards/BalanceCard'
 import ExpenseCard from '../components/Cards/ExpenseCard'
+import Filter from '../components/Filter'
 
 const PageDashboard = () => {
   const [userWallet, setUserWallet] = useState({
@@ -34,10 +34,41 @@ const PageDashboard = () => {
       {/* TRANSACTIONS AND CARD LIST */}
       <div className='grid grid-cols-1 gap-5 md:grid-cols-3 pb-[100px]'>
         <div className='col-span-1 md:col-span-2'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quod voluptatibus odio totam placeat a iste enim deserunt eveniet expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam possimus eveniet. Tempora quo possimus natus nam debitis incidunt sapiente necessitatibus temporibus nihil totam, praesentium minima explicabo officiis id assumenda eligendi sed voluptatum exercitationem beatae nisi. Minus omnis voluptas itaque, reiciendis laboriosam, accusantium debitis ducimus quod autem dolorem temporibus laudantium ullam nemo exercitationem labore earum veritatis unde! Voluptas consequuntur ab error veritatis ipsam soluta dolor, doloremque ducimus sapiente mollitia ex neque officia. Sapiente quod laboriosam assumenda doloribus quaerat. Vitae quis consectetur dicta, aliquam ratione expedita, veritatis iusto voluptatibus dolores ullam nemo non architecto reiciendis repellendus ipsam eaque vel facilis recusandae?
+          <h2 className='text-base font-semibold mb-[5px]'>Transaction History</h2>
+          <Filter />
+          <div className='w-full p-[10px] border rounded-[10px]'>
+            <div className='bg-cWhite10 py-3 px-[10px] rounded-[5px] font-semibold text-sm flex justify-between items-center'>
+              <p>Transaction</p>
+              <p>Amount</p>
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+            <div className='p-[10px] border-b'>
+              content here
+            </div>
+          </div>
         </div>
         <div className='hidden md:block'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorem! Amet quaerat quo inventore quibusdam pariatur veniam minima assumenda est!
+          <h2 className='text-base text-cBlack10 font-bold'>My Cards</h2>
+          <div className=''>
+            table inside
+          </div>
         </div>
       </div>
     </div>
