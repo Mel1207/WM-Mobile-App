@@ -10,6 +10,7 @@ import iconDelivery from '../assets/icon-delivery.svg'
 import iconGrocery from '../assets/icon-grocery.svg'
 import iconWork from '../assets/icon-work.svg'
 import iconCredit from '../assets/icon-credit.svg'
+import { transactions } from '../constants'
 
 const PageDashboard = () => {
   const [userWallet, setUserWallet] = useState({
@@ -19,7 +20,7 @@ const PageDashboard = () => {
     theme: 'theme-1'
   })
 
-  const { transactions, getTransactions } = useGetTransactions()
+  // const { transactions, getTransactions } = useGetTransactions()
 
   return (
     <div className='container'>

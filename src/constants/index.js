@@ -28,3 +28,62 @@ export const mobileLinks = [
     icon: transactions1
   }
 ]
+
+export const transactions = [
+  {
+    id: 1,
+    description: "Paid tuition",
+    category: "transfer",
+    type: "expense",
+    status: "pending",
+    date: "10/06/2024"
+  },
+  {
+    id: 2,
+    description: "Parcel delivery payment",
+    category: "delivery",
+    type: "expense",
+    status: "complete",
+    date: "10/06/2024"
+  },
+  {
+    id: 3,
+    description: "Buy groceries",
+    category: "groceries",
+    type: "expense",
+    status: "pending",
+    date: "10/06/2024" 
+  },
+  {
+    id: 4,
+    description: "Payslip payment",
+    category: "work",
+    type: "income",
+    status: "complete",
+    date: "10/06/2024" 
+  },
+  {
+    id: 5,
+    description: "Credit card payment",
+    category: "credit",
+    type: "expense",
+    status: "pending",
+    date: "10/06/2024"
+  },
+  {
+    id: 6,
+    description: "Buy phone",
+    category: "transfer",
+    type: "expense",
+    status: "pending",
+    date: "10/06/2024" 
+  },
+  {
+    id: 7,
+    description: "Part time payment",
+    category: "work",
+    type: "income",
+    status: "Pending",
+    date: "10/06/2024"
+  }
+]
