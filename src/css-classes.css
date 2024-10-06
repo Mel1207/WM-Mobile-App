@@ -5,11 +5,11 @@
 
 /* BUTTONS */
 .btn-primary {
-  @apply rounded-md h-[45px] bg-cViolet w-full text-white
+  @apply rounded-md h-[45px] bg-cViolet w-max text-white text-sm
 }
 
 .btn-outlined-secondary {
-  @apply rounded-md w-full h-[45px] border border-gray-900
+  @apply rounded-md w-max h-[45px] border border-gray-900 text-sm
 }
 
 /* NAVIGATIONS */
@@ -33,6 +33,11 @@
 
 .pending {
   @apply py-1 text-[12px] px-3 bg-[#5A5A5A10] text-cBlack20 rounded-full w-max
+}
+
+/* MODAL */
+.modal {
+  @apply fixed top-0 left-0 h-screen w-screen bg-black z-20 bg-opacity-50 flex items-center justify-center px-5
 }
 
 /* BANK GENERATED LOGOS */
