@@ -10,7 +10,7 @@ const CardModal = () => {
 
   return (
     <div className='modal'>
-      <div className='bg-white w-full rounded-[20px] p-5'>
+      <div className='bg-white w-full rounded-[20px] p-5 max-h-[calc(100vh-100px)] overflow-y-auto'>
         {/* MODAL HEAD */}
         <div className='flex w-full items-center justify-between pb-[30px]'>
           <span className='font-bold text-cBlack10 md:text-lg'>Add new card</span>
