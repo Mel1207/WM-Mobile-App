@@ -11,7 +11,7 @@ import iconGrocery from '../assets/icon-grocery.svg'
 import iconWork from '../assets/icon-work.svg'
 import iconCredit from '../assets/icon-credit.svg'
 import { transactions } from '../constants'
-import CardTable from '../components/tables/CardTable'
+import DashCardTable from '../components/tables/DashCardTable'
 
 const PageDashboard = () => {
   const [userWallet, setUserWallet] = useState({
@@ -84,7 +84,7 @@ const PageDashboard = () => {
         </div>
         <div className='hidden md:block'>
           <h2 className='text-base text-cBlack10 font-bold mb-5 mt-[5px]'>My Cards</h2>
-          <CardTable />
+          <DashCardTable />
         </div>
       </div>
     </div>
