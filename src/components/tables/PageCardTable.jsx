@@ -15,13 +15,13 @@ const PageCardTable = () => {
 
   return (
     <div className='w-full border rounded-[10px] relative mb-[100px]'>
-      <div className='p-[10px]'>
-        <div className='bg-cWhite10 py-3 px-[10px] rounded-[5px] font-semibold text-sm flex justify-between items-center'>
+      <div className='p-[10px] md:p-5'>
+        <div className='bg-cWhite10 py-3 px-[10px] rounded-[5px] font-semibold text-sm flex justify-between items-center md:px-5'>
           <p>Card details</p>
           <p>Actions</p>
         </div>
         {cardList && cardList.map(item => (
-          <div className='py-[15px] px-[10px] border-b flex justify-between items-center' key={item.id}>
+          <div className='py-[15px] px-[10px] border-b flex justify-between items-center md:px-5' key={item.id}>
             
             <div className='flex gap-[15px] items-center'>
               {item.cardCode === 'bpo' && <div className='bank-set bg-cBlue'>{item.cardCode.toUpperCase()}</div>}
@@ -34,7 +34,7 @@ const PageCardTable = () => {
               </div>
             </div>
           
-            <div className='flex gap-[15px]'>
+            <div className='flex gap-[15px] md:gap-5'>
               <a aria-label='button' type='button' className='text-cGreen text-sm cursor-pointer'>Edit</a>
               <a aria-label='button' type='button' className='text-cRed text-sm cursor-pointer' onClick={() => handleDeleteCard(item.id)}>Delete</a>
             </div>
