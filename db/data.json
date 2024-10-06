@@ -70,49 +70,56 @@
       "cardName": "BPO master card",
       "cardNumber": "001234502101",
       "expDate": "11/20/2035",
-      "limmit": 45000
+      "limmit": 45000,
+      "cardCode": "bpo"
     },
     {
       "id": 2,
       "cardName": "Union blink gold card",
       "cardNumber": "001237429920",
       "expDate": "11/20/2035",
-      "limmit": 60000
+      "limmit": 60000,
+      "cardCode": "ub"
     },
     {
       "id": 3,
       "cardName": "East wood master card",
       "cardNumber": "001334592118",
       "expDate": "11/20/2035",
-      "limmit": 25000
+      "limmit": 25000,
+      "cardCode": "ew"
     },
     {
       "id": 4,
       "cardName": "Chino blink rewards",
       "cardNumber": "001132532151",
       "expDate": "11/20/2035",
-      "limmit": 35000
+      "limmit": 35000,
+      "cardCode": "cb"
     },
     {
-      "id": 4,
+      "id": 5,
       "cardName": "Chino blink rewards",
       "cardNumber": "001132532151",
       "expDate": "11/20/2035",
-      "limmit": 35000
+      "limmit": 35000,
+      "cardCode": "cb"
     },
     {
-      "id": 4,
+      "id": 6,
       "cardName": "Chino blink rewards",
       "cardNumber": "001132532151",
       "expDate": "11/20/2035",
-      "limmit": 35000
+      "limmit": 35000,
+      "cardCode": "cb"
     },
     {
-      "id": 4,
+      "id": 7,
       "cardName": "Chino blink rewards",
       "cardNumber": "001132532151",
       "expDate": "11/20/2035",
-      "limmit": 35000
+      "limmit": 35000,
+      "cardCode": "cb"
     }
   ]
 }
