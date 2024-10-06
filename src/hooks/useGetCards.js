@@ -16,6 +16,7 @@ export const useGetCards = () => {
 
   return {
     cardList, 
-    getCards
+    getCards,
+    setCardList
   }
 }

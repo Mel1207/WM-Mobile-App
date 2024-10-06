@@ -1,7 +1,7 @@
 {
   "transactions": [
     {
-      "id": 1,
+      "id": "1",
       "description": "Paid tuition",
       "category": "transfer",
       "type": "expense",
@@ -10,7 +10,7 @@
       "amount": 10000
     },
     {
-      "id": 2,
+      "id": "2",
       "description": "Parcel delivery payment",
       "category": "delivery",
       "type": "expense",
@@ -19,7 +19,7 @@
       "amount": 250
     },
     {
-      "id": 3,
+      "id": "3",
       "description": "Buy groceries",
       "category": "groceries",
       "type": "expense",
@@ -28,7 +28,7 @@
       "amount": 3500
     },
     {
-      "id": 4,
+      "id": "4",
       "description": "Payslip payment",
       "category": "work",
       "type": "income",
@@ -37,7 +37,7 @@
       "amount": 20500
     },
     {
-      "id": 5,
+      "id": "5",
       "description": "Credit card payment",
       "category": "credit",
       "type": "expense",
@@ -46,7 +46,7 @@
       "amount": 4420
     },
     {
-      "id": 6,
+      "id": "6",
       "description": "Buy phone",
       "category": "transfer",
       "type": "expense",
@@ -55,7 +55,7 @@
       "amount": 8000
     },
     {
-      "id": 7,
+      "id": "7",
       "description": "Part time payment",
       "category": "work",
       "type": "income",
@@ -63,10 +63,10 @@
       "date": "10/06/2024",
       "amount": 12500
     }
-  ], 
+  ],
   "cards": [
     {
-      "id": 1,
+      "id": "1",
       "cardName": "BPO master card",
       "cardNumber": "001234502101",
       "expDate": "11/20/2035",
@@ -74,51 +74,27 @@
       "cardCode": "bpo"
     },
     {
-      "id": 2,
+      "id": "2",
+      "cardName": "Union blink gold card",
+      "cardNumber": "001237429920",
+      "expDate": "11/20/2035",
+      "limmit": 30000,
+      "cardCode": "ub"
+    },
+    {
+      "id": "3",
+      "cardName": "Union blink gold card",
+      "cardNumber": "001237429920",
+      "expDate": "11/20/2035",
+      "limmit": 50000,
+      "cardCode": "ew"
+    },
+    {
+      "id": "4",
       "cardName": "Union blink gold card",
       "cardNumber": "001237429920",
       "expDate": "11/20/2035",
       "limmit": 60000,
-      "cardCode": "ub"
-    },
-    {
-      "id": 3,
-      "cardName": "East wood master card",
-      "cardNumber": "001334592118",
-      "expDate": "11/20/2035",
-      "limmit": 25000,
-      "cardCode": "ew"
-    },
-    {
-      "id": 4,
-      "cardName": "Chino blink rewards",
-      "cardNumber": "001132532151",
-      "expDate": "11/20/2035",
-      "limmit": 35000,
-      "cardCode": "cb"
-    },
-    {
-      "id": 5,
-      "cardName": "Chino blink rewards",
-      "cardNumber": "001132532151",
-      "expDate": "11/20/2035",
-      "limmit": 35000,
-      "cardCode": "cb"
-    },
-    {
-      "id": 6,
-      "cardName": "Chino blink rewards",
-      "cardNumber": "001132532151",
-      "expDate": "11/20/2035",
-      "limmit": 35000,
-      "cardCode": "cb"
-    },
-    {
-      "id": 7,
-      "cardName": "Chino blink rewards",
-      "cardNumber": "001132532151",
-      "expDate": "11/20/2035",
-      "limmit": 35000,
       "cardCode": "cb"
     }
   ]
