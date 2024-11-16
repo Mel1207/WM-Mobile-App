@@ -70,7 +70,7 @@
       "cardName": "BPO master card",
       "cardNumber": "001234502101",
       "expDate": "11/20/2035",
-      "limmit": 45000,
+      "limit": 45000,
       "cardCode": "bpo"
     },
     {
@@ -78,7 +78,7 @@
       "cardName": "Union blink gold card",
       "cardNumber": "001237429920",
       "expDate": "11/20/2035",
-      "limmit": 30000,
+      "limit": 30000,
       "cardCode": "ub"
     },
     {
@@ -86,7 +86,7 @@
       "cardName": "Union blink gold card",
       "cardNumber": "001237429920",
       "expDate": "11/20/2035",
-      "limmit": 50000,
+      "limit": 50000,
       "cardCode": "ew"
     },
     {
@@ -94,8 +94,16 @@
       "cardName": "Union blink gold card",
       "cardNumber": "001237429920",
       "expDate": "11/20/2035",
-      "limmit": 60000,
+      "limit": 60000,
       "cardCode": "cb"
+    },
+    {
+      "id": "6e17",
+      "cardName": "UB express visa",
+      "cardNumber": "345345345",
+      "limit": "20000",
+      "cardCode": "ub",
+      "accName": "Mel John Pualon"
     }
   ]
 }

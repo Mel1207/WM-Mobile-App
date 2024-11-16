@@ -29,7 +29,7 @@ const PageCardTable = () => {
               {item.cardCode === 'ew' && <div className='bank-set bg-cGreen10'>{item.cardCode.toUpperCase()}</div>}
               {item.cardCode === 'cb' && <div className='bank-set bg-cRed'>{item.cardCode.toUpperCase()}</div>}
               <div>
-                <p className='font-bold text-cBlack10 text-base'>{item.limmit}.00</p>
+                <p className='font-bold text-cBlack10 text-base'>{item.limit}.00</p>
                 <p className='text-[14px] text-cBlack20 truncate max-w-32'>{item.cardName}</p>
               </div>
             </div>
